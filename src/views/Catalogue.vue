@@ -1,13 +1,16 @@
 <template>
-  <Catalogue />
+  <div>
+    <Products />
+    <Seeds/>
+  </div>
 </template>
 
 <script>
 
-import Catalogue from '../components/catalogue/Catalogue.vue'
+import Products from '../components/catalogue/Products.vue'
+import Seeds from '../components/catalogue/Seeds.vue'
 
 export default {
-  components: { Catalogue },
- 
+  components: { Products, Seeds },
 }
 </script>

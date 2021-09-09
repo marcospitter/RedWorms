@@ -1,14 +1,20 @@
 <template>
   <v-container
-    my-5>
-    
-    <div class="py-2">
-      <h2>
+    class="my-5">
+    <h2 class="d-block py-5">
       Todos los productos y semillas de nuestra tienda los encontrás acá.
-      </h2>
-    </div>
+    </h2>
+    <v-card
+      flat
+      class="pa-3">
+      <p>
+        Los productos que ofrece RedWorms son <span>100% orgánicos y ecológicos</span> o construidos con material <span>reciclable o reutilizado</span>. Tenemos composteras, cajones huerteros artesanales, insecticidas orgánicos y mucho más. 
+      </p>
+    </v-card>
+    
     
     <v-row
+      class="py-5"
       justify="center"
       align="center">
     
@@ -62,6 +68,12 @@
     </v-row>
   </v-container>
 </template>
+
+<style scoped>
+  span {
+    font-weight: bold;
+  }
+</style>
 
 <script>
 

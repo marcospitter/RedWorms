@@ -81,14 +81,6 @@
             </v-list-item-content>
           </v-list-item>  
           <v-divider></v-divider>
-          <v-list-item>
-            <v-list-item-subtitle>
-              <a
-                href="https://www.redcompostaje.org.ar/">
-                Página de Red de Compostaje
-              </a>
-            </v-list-item-subtitle>
-          </v-list-item>
         </v-list>
     </v-navigation-drawer>
   </v-card>

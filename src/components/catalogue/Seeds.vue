@@ -80,7 +80,7 @@
 export default {
   data: () => ({
     
-    products: [
+    seeds: [
       { 
       title: "Compostera", 
       subtitle: "prueba", 

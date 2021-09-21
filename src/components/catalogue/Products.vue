@@ -20,7 +20,8 @@
     
       <v-col
         cols="12" sm="6" lg="4"
-        v-for=" product in products " :key="product.title">
+        v-for=" product in products " 
+        :key="product.title">
         
         <v-card
           :disabled="product.disable"
@@ -28,7 +29,7 @@
           max-width="450">
             
             <v-img
-              :src='product.image'
+              :src='product.image.url'
               alt="producto">
             </v-img>
 
@@ -77,8 +78,7 @@
 
 <script>
 
-import compostera from "@/assets/catalogue/compostera.jpg"
-import lombrices from "@/assets/catalogue/lombrices.jpg"
+
 
 export default {
   data: () => ({
@@ -86,37 +86,21 @@ export default {
     products: [
       { 
       title: "Compostera", 
-      subtitle: "prueba", 
+      subtitle: "ssss", 
       description: "la que va", 
-      image: 'https://cdn.pixabay.com/photo/2021/02/26/21/09/compost-6053136_960_720.jpg',
+      image: { url: require("@/assets/catalogue/products/compostera.jpg")},
       showDescription: false,
       disable: false,
       },
       { 
-      title: "Compostera", 
-      subtitle: "prueba", 
+      title: "Lombrices Californianas", 
+      subtitle: "Núcleo de lombrices x60", 
       description: "la que va", 
-      image: '@/assets/catalogue/lombrices.jpg',
+      image: { url: require("@/assets/catalogue/products/lombrices.jpg")},
       showDescription: false,
       disable: false,
       },
-      { 
-      title: "Compostera", 
-      subtitle: "prueba", 
-      description: "la que va", 
-      image: compostera,
-      showDescription: false,
-      disable: false,
-      },
-      { 
-      title: "Compostera", 
-      subtitle: "prueba", 
-      description: "Hey gang, in this Vuetify tutorial we'll dive right into the grid system. The Vuetify grid is used to lay out content and elements on a web page in rows (or columns) and uses the flex-box model under the hood.", 
-      image: lombrices,
-      showDescription: false,
-      disable: false,
-      },
-      
+  
     ]
 
   }),

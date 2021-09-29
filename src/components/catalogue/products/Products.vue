@@ -28,10 +28,10 @@
           class="ma-auto"
           max-width="450">
             
-            <v-img
-              :src='product.image.url'
-              alt="producto">
-            </v-img>
+          <v-img
+            :src='product.image.url'
+            alt="producto">
+          </v-img>
 
             <v-card-title>
               {{ product.title }}
@@ -76,33 +76,4 @@
   }
 </style>
 
-<script>
-
-
-
-export default {
-  data: () => ({
-    
-    products: [
-      { 
-      title: "Compostera", 
-      subtitle: "ssss", 
-      description: "la que va", 
-      image: { url: require("@/assets/catalogue/products/compostera.jpg")},
-      showDescription: false,
-      disable: false,
-      },
-      { 
-      title: "Lombrices Californianas", 
-      subtitle: "Núcleo de lombrices x60", 
-      description: "la que va", 
-      image: { url: require("@/assets/catalogue/products/lombrices.jpg")},
-      showDescription: false,
-      disable: false,
-      },
-  
-    ]
-
-  }),
-}
-</script>
+<script defer src="./products.js"></script>
